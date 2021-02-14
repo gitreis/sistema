@@ -1,7 +1,8 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="pt-br">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Content-Language" content="pt-br" />
@@ -12,45 +13,25 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-    <!-- Generated: 2018-04-16 09:29:05 +0200 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="../assets/css/dashboard.css" rel="stylesheet" />
     <title>Produtos</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
-    <script src="./assets/js/require.min.js"></script>
-    <script>
-      requirejs.config({
-          baseUrl: '.'
-      });
-    </script>
-    <!-- Dashboard Core -->
-    <link href="./assets/css/dashboard.css" rel="stylesheet" />
-    <script src="./assets/js/dashboard.js"></script>
-    <!-- c3.js Charts Plugin -->
-    <link href="./assets/plugins/charts-c3/plugin.css" rel="stylesheet" />
-    <script src="./assets/plugins/charts-c3/plugin.js"></script>
-    <!-- Google Maps Plugin -->
-    <link href="./assets/plugins/maps-google/plugin.css" rel="stylesheet" />
-    <script src="./assets/plugins/maps-google/plugin.js"></script>
-    <!-- Input Mask Plugin -->
-    <script src="./assets/plugins/input-mask/plugin.js"></script>
   </head>
-  <body class="">
+  <body>
     <div class="page">
       <div class="page-main">
         <div class="header py-4">
           <div class="container">
             <div class="d-flex">
-              <a class="header-brand" href="./index.html">
-                <img src="./demo/brand/tabler.svg" class="header-brand-img" alt="tabler logo">
+              <a class="header-brand" href="./home.html">
+                <img src="../demo/brand/tabler.svg" class="header-brand-img" alt="tabler logo">
               </a>
-              <div class="d-flex order-lg-2 ml-auto">                
+              <div class="d-flex order-lg-2 ml-auto">
                 <div>
                   <a href="#" class="nav-link pr-0 leading-none" data-toggle="dropdown">
-                    <span class="avatar" style="background-image: url(./demo/faces/female/25.jpg)"></span>
+                    <span class="avatar" style="background-image: url(../demo/faces/male/25.jpg)"></span>
                     <span class="ml-2 d-none d-lg-block">
-                      <span class="text-default">Jane Pearson</span>
+                      <span class="text-default">Thomas Anderson</span>
                       <small class="text-muted d-block mt-1">Administrator</small>
                     </span>
                   </a>
@@ -76,7 +57,7 @@
               <div class="col-lg order-lg-first">
                 <ul class="nav nav-tabs border-0 flex-column flex-lg-row">
                   <li class="nav-item">
-                    <a href="./index.html" class="nav-link"><i class="fe fe-home"></i> Home</a>
+                    <a href="./home.html" class="nav-link"><i class="fe fe-home"></i> Home</a>
                   </li>
 		  <li class="nav-item">
                     <a href="./produtos.html" class="nav-link active"><i class="fe fe-package"></i> Produtos</a>
@@ -101,7 +82,7 @@
                     <h3 class="card-title">Produtos</h3>
 		    <div class="card-options">
 		      <a href="./form-produto.html" class="btn btn-azure">Adicionar</a>
-		    </div>                    
+		    </div>
                   </div>
                   <div class="table-responsive">
                     <table class="table card-table table-vcenter text-nowrap">
@@ -112,7 +93,7 @@
                           <th>Valor unitário</th>
                           <th>Estoque</th>
                           <th>Data última venda</th>
-                          <th>Total de vendas</th>                          
+                          <th>Total de vendas</th>
                           <th class="w-1"></th>
                           <th class="w-1"></th>
                         </tr>
@@ -132,16 +113,16 @@
                           </td>
                           <td>
                             R$ 30,00
-                          </td>                         
+                          </td>
                           <td>
                             <a class="icon" href="./form-produto-edit.html">
                               <i class="fe fe-edit"></i>
-                            </a>			    
+                            </a>
                           </td>
                           <td>
                             <a class="icon" href="javascript:void(0)">
                               <i class="fe fe-trash"></i>
-                            </a>			    
+                            </a>
                           </td>
                         </tr>
                         <tr>
@@ -158,16 +139,16 @@
                           </td>
                           <td>
                             R$ 577,50
-                          </td>                         
+                          </td>
                           <td>
                             <a class="icon" href="javascript:void(0)">
                               <i class="fe fe-edit"></i>
-                            </a>			    
+                            </a>
                           </td>
                           <td>
                             <a class="icon" href="javascript:void(0)">
                               <i class="fe fe-trash"></i>
-                            </a>			    
+                            </a>
                           </td>
                         </tr>
                         <tr>
@@ -184,16 +165,16 @@
                           </td>
                           <td>
                             R$ 55,50
-                          </td>                         
+                          </td>
                           <td>
                             <a class="icon" href="javascript:void(0)">
                               <i class="fe fe-edit"></i>
-                            </a>			    
+                            </a>
                           </td>
                           <td>
                             <a class="icon" href="javascript:void(0)">
                               <i class="fe fe-trash"></i>
-                            </a>			    
+                            </a>
                           </td>
                         </tr>
                         <tr>
@@ -210,16 +191,16 @@
                           </td>
                           <td>
                             R$ 77,50
-                          </td>                         
+                          </td>
                           <td>
                             <a class="icon" href="javascript:void(0)">
                               <i class="fe fe-edit"></i>
-                            </a>			    
+                            </a>
                           </td>
                           <td>
                             <a class="icon" href="javascript:void(0)">
                               <i class="fe fe-trash"></i>
-                            </a>			    
+                            </a>
                           </td>
                         </tr>
                       </tbody>
@@ -232,5 +213,7 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
   </body>
 </html>

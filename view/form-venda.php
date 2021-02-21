@@ -18,12 +18,13 @@
     <title>Produtos</title>
   </head>
   <body>
+
     <div class="page">
       <div class="page-main">
         <div class="header py-4">
           <div class="container">
             <div class="d-flex">
-              <a class="header-brand" href="./home.html">
+              <a class="header-brand" href="./home.php">
                 <img src="../demo/brand/tabler.svg" class="header-brand-img" alt="tabler logo">
               </a>
               <div class="d-flex order-lg-2 ml-auto">
@@ -57,16 +58,16 @@
               <div class="col-lg order-lg-first">
                 <ul class="nav nav-tabs border-0 flex-column flex-lg-row">
                   <li class="nav-item">
-                    <a href="./home.html" class="nav-link"><i class="fe fe-home"></i> Home</a>
+                    <a href="./home.php" class="nav-link"><i class="fe fe-home"></i> Home</a>
                   </li>
-		  <li class="nav-item">
-                    <a href="./produtos.html" class="nav-link active"><i class="fe fe-package"></i> Produtos</a>
+                  <li class="nav-item">
+                    <a href="./produtos.php" class="nav-link"><i class="fe fe-package"></i> Produtos</a>
                   </li>
-		  <li class="nav-item">
-                    <a href="./form-venda.html" class="nav-link"><i class="fe fe-dollar-sign"></i> Venda</a>
+                  <li class="nav-item">
+                    <a href="./form-venda.php" class="nav-link active"><i class="fe fe-dollar-sign"></i> Venda</a>
                   </li>
-		  <li class="nav-item">
-                    <a href="./produtos-excluidos.html" class="nav-link"><i class="fe fe-trash"></i> Lixeira</a>
+                  <li class="nav-item">
+                    <a href="./produtos-excluidos.php" class="nav-link"><i class="fe fe-trash"></i> Lixeira</a>
                   </li>
                 </ul>
               </div>
@@ -75,132 +76,121 @@
         </div>
         <div class="my-3 my-md-5">
           <div class="container">
+            <div class="row">
+            <div class="col-lg-12">
+              <form class="card">
+                <div class="card-body">
+                  <h3 class="card-title">Realizar venda de um produto</h3>
+                  <div class="row">
+		    <div class="col-md-12">
+                      <div class="form-group">
+                        <label class="form-label">Produto</label>
+                        <select class="form-control custom-select">
+                          <option value="">Batata</option>
+                          <option value="">Arroz</option>
+                          <option value="">Feijão</option>
+                          <option value="">Coca-cola 2LT</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <div class="form-group">
+                        <label class="form-label">Quantidade</label>
+                        <input type="number" class="form-control" placeholder="Digite aqui a quantidade">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <div class="form-group">
+                        <label class="form-label">Valor unitário</label>
+                        <div class="input-group">
+                          <span class="input-group-prepend">
+                            <span class="input-group-text">R$</span>
+                          </span>
+                          <input type="text" class="form-control text-right" aria-label="Valor">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <div class="form-group">
+                        <label class="form-label">Valor total</label>
+                        <div class="input-group">
+                          <span class="input-group-prepend">
+                            <span class="input-group-text">R$</span>
+                          </span>
+                          <input type="text" class="form-control text-right" aria-label="Valor" disabled="disabled" title="Este campo não pode ser alterado">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-12">
+                      <div class="form-group">
+                        <div class="form-label">&nbsp;</div>
+                        <div class="custom-controls-stacked">
+                          <label class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
+                            <span class="custom-control-label">Atualizar valor unitário do produto</span>
+                          </label>
+			</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer text-left" style="display: flex; justify-content: space-between">
+		  <div>
+		    <a href="./produtos.php" class="btn btn-secondary">Voltar para produtos</a>
+		  </div>
+		  <div>
+		    <button type="submit" class="btn btn-primary">Confirmar</button>
+		  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+	<div class="my-3 my-md-5">
+          <div class="container">
             <div class="row row-cards row-deck">
               <div class="col-12">
                 <div class="card">
                   <div class="card-header">
-                    <h3 class="card-title">Produtos</h3>
-		    <div class="card-options">
-		      <a href="./form-produto.html" class="btn btn-azure">Adicionar</a>
-		    </div>
+                    <h3 class="card-title">Últimas vendas realizadas</h3>
                   </div>
                   <div class="table-responsive">
                     <table class="table card-table table-vcenter text-nowrap">
                       <thead>
                         <tr>
                           <th class="w-1">#</th>
-                          <th>Descrição</th>
+                          <th>Produto</th>
+                          <th>Quantidade</th>
                           <th>Valor unitário</th>
-                          <th>Estoque</th>
-                          <th>Data última venda</th>
-                          <th>Total de vendas</th>
-                          <th class="w-1"></th>
-                          <th class="w-1"></th>
+                          <th>Valor total da venda</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td><span class="text-muted">1</span></td>
+                          <td><span class="text-muted">2</span></td>
                           <td>Batata</td>
+                          <td>
+                            2
+                          </td>
                           <td>
                             R$ 1,50
                           </td>
                           <td>
-                            2000
-                          </td>
-                          <td>
-                            08/09/2019
-                          </td>
-                          <td>
-                            R$ 30,00
-                          </td>
-                          <td>
-                            <a class="icon" href="./form-produto-edit.html">
-                              <i class="fe fe-edit"></i>
-                            </a>
-                          </td>
-                          <td>
-                            <a class="icon" href="javascript:void(0)">
-                              <i class="fe fe-trash"></i>
-                            </a>
+                            R$ 3,00
                           </td>
                         </tr>
                         <tr>
-                          <td><span class="text-muted">2</span></td>
-                          <td>Arroz</td>
+                          <td><span class="text-muted">1</span></td>
+                          <td>Batata</td>
                           <td>
-                            R$ 17,50
+                            10
                           </td>
                           <td>
-                            200
+                            R$ 1,50
                           </td>
                           <td>
-                            05/09/2019
-                          </td>
-                          <td>
-                            R$ 577,50
-                          </td>
-                          <td>
-                            <a class="icon" href="javascript:void(0)">
-                              <i class="fe fe-edit"></i>
-                            </a>
-                          </td>
-                          <td>
-                            <a class="icon" href="javascript:void(0)">
-                              <i class="fe fe-trash"></i>
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><span class="text-muted">3</span></td>
-                          <td>Feijão</td>
-                          <td>
-                            R$ 5,50
-                          </td>
-                          <td>
-                            10000
-                          </td>
-                          <td>
-                            05/09/2019
-                          </td>
-                          <td>
-                            R$ 55,50
-                          </td>
-                          <td>
-                            <a class="icon" href="javascript:void(0)">
-                              <i class="fe fe-edit"></i>
-                            </a>
-                          </td>
-                          <td>
-                            <a class="icon" href="javascript:void(0)">
-                              <i class="fe fe-trash"></i>
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><span class="text-muted">4</span></td>
-                          <td>Coca-cola 2LT</td>
-                          <td>
-                            R$ 7,50
-                          </td>
-                          <td>
-                            20000
-                          </td>
-                          <td>
-                            05/09/2019
-                          </td>
-                          <td>
-                            R$ 77,50
-                          </td>
-                          <td>
-                            <a class="icon" href="javascript:void(0)">
-                              <i class="fe fe-edit"></i>
-                            </a>
-                          </td>
-                          <td>
-                            <a class="icon" href="javascript:void(0)">
-                              <i class="fe fe-trash"></i>
-                            </a>
+                            R$ 15,00
                           </td>
                         </tr>
                       </tbody>
@@ -211,8 +201,9 @@
             </div>
           </div>
         </div>
-      </div>
     </div>
+  </div>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
   </body>

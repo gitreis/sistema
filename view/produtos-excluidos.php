@@ -23,8 +23,8 @@
         <div class="header py-4">
           <div class="container">
             <div class="d-flex">
-              <a class="header-brand" href="./home.html">
-                <img src="./demo/brand/tabler.svg" class="header-brand-img" alt="tabler logo">
+              <a class="header-brand" href="./home.php">
+                <img src="../demo/brand/tabler.svg" class="header-brand-img" alt="tabler logo">
               </a>
               <div class="d-flex order-lg-2 ml-auto">
                 <div>
@@ -57,16 +57,16 @@
               <div class="col-lg order-lg-first">
                 <ul class="nav nav-tabs border-0 flex-column flex-lg-row">
                   <li class="nav-item">
-                    <a href="./index.html" class="nav-link"><i class="fe fe-home"></i> Home</a>
+                    <a href="./home.php" class="nav-link"><i class="fe fe-home"></i> Home</a>
                   </li>
 		  <li class="nav-item">
-                    <a href="./produtos.html" class="nav-link active"><i class="fe fe-package"></i> Produtos</a>
+                    <a href="./produtos.php" class="nav-link"><i class="fe fe-package"></i> Produtos</a>
                   </li>
 		  <li class="nav-item">
-                    <a href="./form-venda.html" class="nav-link"><i class="fe fe-dollar-sign"></i> Venda</a>
+                    <a href="./form-venda.php" class="nav-link"><i class="fe fe-dollar-sign"></i> Venda</a>
                   </li>
 		  <li class="nav-item">
-                    <a href="./produtos-excluidos.html" class="nav-link"><i class="fe fe-trash"></i> Lixeira</a>
+                    <a href="./produtos-excluidos.php" class="nav-link active"><i class="fe fe-trash"></i> Lixeira</a>
                   </li>
                 </ul>
               </div>
@@ -75,60 +75,66 @@
         </div>
         <div class="my-3 my-md-5">
           <div class="container">
-            <div class="row">
-            <div class="col-lg-12">
-              <form class="card">
-                <div class="card-body">
-                  <h3 class="card-title">Novo produto</h3>
-                  <div class="row">
-		    <div class="col-md-12">
-                      <div class="form-group">
-			<label class="form-label">Descrição</label>
-			<input type="text" class="form-control" name="example-text-input" placeholder="Arroz..">
-		      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                      <div class="form-group">
-                        <label class="form-label">Estoque</label>
-                        <input type="number" class="form-control" placeholder="10..">
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                      <div class="form-group">
-                        <label class="form-label">Código de barras</label>
-                        <input type="number" class="form-control" placeholder="78978978978978">
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                      <div class="form-group">
-                        <label class="form-label">Valor unitário</label>
-                        <div class="input-group">
-                          <span class="input-group-prepend">
-                            <span class="input-group-text">R$</span>
-                          </span>
-                          <input type="text" class="form-control text-right" aria-label="Valor">
-                        </div>
-                      </div>
-                    </div>
+            <div class="row row-cards row-deck">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">Produtos excluídos</h3>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table card-table table-vcenter text-nowrap">
+                      <thead>
+                        <tr>
+                          <th class="w-1">#</th>
+                          <th>Descrição</th>
+                          <th>Valor unitário</th>
+                          <th>Estoque</th>
+                          <th class="w-1"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><span class="text-muted">1</span></td>
+                          <td>Batata rosa</td>
+                          <td>
+                            R$ 1,50
+                          </td>
+                          <td>
+                            2000
+                          </td>
+                          <td>
+                            <a class="icon" href="#">
+                              <i class="fe fe-refresh-ccw"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="text-muted">2</span></td>
+                          <td>Farinha</td>
+                          <td>
+                            R$ 7,50
+                          </td>
+                          <td>
+                            200
+                          </td>
+                          <td>
+                            <a class="icon" href="#">
+                              <i class="fe fe-refresh-ccw"></i>
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
-                <div class="card-footer text-left" style="display: flex; justify-content: space-between">
-		  <div>
-		    <a href="./produtos.html" class="btn btn-secondary">Voltar para produtos</a>
-		  </div>
-		  <div>
-		    <button type="submit" class="btn btn-primary">Confirmar</button>
-		  </div>
-                </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
   </body>
 </html>
